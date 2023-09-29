@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Construction machinery of the highest quality.">
+    <title>Intertecs</title>
+
+    <!-- Swiper -->
+    <script src="swiper-bundle.min.js" defer></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <script defer src="leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="bg-slate-100 font-lato">
+    <header class="py-2 bg-zinc-900 shadow-md">
+        <div class="container">
+            <div class="flex justify-center md:justify-between items-center">
+                <a href="http://" aria-label="go to home page">
+                    <img src="images/logo.png" alt="" class="h-12 w-auto object-cover">
+                </a>
+
+                <nav class="hidden md:block">
+                    <ul class="flex gap-6">
+                        <li class="flex items-center">
+                            <a href="#partners" class="text-white text-lg capitalize">
+                                Partners</a>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#about-us" class="text-white text-lg capitalize">about</a>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#contact" class="text-white text-lg capitalize">contact</a>
+                        </li>
+                        <li>
+                            <a href="index.html"
+                                class="bg-yellow-300 text-lg font-algeti px-3 py-1 block rounded-sm shadow-lg hover:shadow-xl hover:bg-yellow-400 transition-all">ქართ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative">
+            <div class="flex items-center justify-center flex-col gap-5 absolute inset-0 z-20">
+                <h1 class="text-4xl md:text-7xl tracking-wide text-white font-bold">INTERTECHNICS
+                </h1>
+                <p class="text-xl md:text-4xl tracking-wider text-white">The World's Leading
+                    Machines
+                </p>
+                <a href="#contact"
+                    class="bg-yellow-300 px-4 py-2 block rounded-sm font-bold text-lg text-gray-900 capitalize shadow-lg hover:shadow-xl hover:bg-yellow-400 transition-all mt-6">
+                    get in touch
+                </a>
+            </div>
+            <div
+                class="before:block before:absolute before:inset-0 before:bg-zinc-700/70 before:z-10">
+                <!-- Slider main container -->
+                <div class="swiper h-[60vh] lg:h-[82vh]">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images/1.jpg" alt="" class="block h-full w-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/4.jpg" alt="" class="block h-full w-full object-cover">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/3.jpg" alt="" class="block h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-16 scroll-m-8" id="partners">
+            <div class="container">
+                <h2 class="text-4xl mb-8">Partners</h2>
+
+                <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/bobcat.webp" alt="" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/bobcat-logo.png" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Bobcat</h3>
+                        <p>Skid–Steer Loaders and Compact Track Loaders, Compact Excavators,
+                            Telescopic Handlers and its
+                            multifunctional attachments.</p>
+                        <a href="https://www.bobcat.com/" target="_blank"
+                            class="underline mt-2 block break-all">https://www.bobcat.com/</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/kubota.jpg" alt="" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/Kubota-Logo.png" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Kubota</h3>
+                        <p>Intertechnics is the official dealer of Kubota engines and spare parts in
+                            Georgia since 2022, we
+                            provide warranty for Kubota engine and offer our service.</p>
+                        <a href="https://www.kubota.com/" target="_blank"
+                            class="underline mt-2 block break-all">https://www.kubota.com/</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/ammann.webp" alt="" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/logo-ammann.webp" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">AMMANN</h3>
+                        <p>Ammann has had a presence in the asphalt plant industry for more than 100
+                            years – before the advent
+                            of recycled asphalt, continuous drum mixers or transport-optimized
+                            plants.</p>
+                        <a href="https://www.ammann.com/en/plants/asphalt-plants" target="_blank"
+                            class="underline mt-2 block break-all">https://www.ammann.com/en/plants/asphalt-plants</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/hbm.jpg" alt="" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/logo-hbmnobas.png" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Hbm-Nobas</h3>
+                        <p>Various Type of Graders.</p>
+                        <a href="http://www.gp.ag/hbm-nobas/Start/" target="_blank"
+                            class="underline mt-2 block break-all">http://www.gp.ag/hbm-nobas/Start/</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/putzmeister.jpg" alt=""
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/putzmeister-logo.png" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Putzmeister</h3>
+                        <p>Mobile, Stationary and Tunnel Concrete Pumps. Specialized Industrial
+                            Pumps, Concrete Mobile Mixers
+                            (Intermix).</p>
+                        <a href="https://www.putzmeister.com" target="_blank"
+                            class="underline mt-2 block break-all">https://www.putzmeister.com</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/kaeser.jpg" alt="" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/kaeser-logo.png" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Kaeser Gmbh</h3>
+                        <p>Industrial Air Stationary Compressors and Construction Mobile
+                            Compressors.</p>
+                        <a href="https://www.kaeser.com/int-en/" target="_blank"
+                            class="underline mt-2 block break-all">https://www.kaeser.com/int-en/</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/ins-makina.jpg" alt=""
+                                class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/ins-makina-logo.svg" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Ins-Makina</h3>
+                        <p>Mobile concrete batching plants.</p>
+                        <a href="https://www.insmakina.com/ru/" target="_blank"
+                            class="underline mt-2 block break-all">https://www.insmakina.com/ru/</a>
+                    </article>
+                    <!-- Single Card end -->
+
+                    <!-- Single Card -->
+                    <article
+                        class="p-3 bg-yellow-300 rounded-md shadow-md hover:shadow-xl transition-shadow group">
+                        <figure class="rounded-md overflow-hidden mb-3 h-[260px] relative">
+                            <img src="images/aliva.jpg" alt="" class="w-full h-full object-cover">
+                            <div
+                                class="absolute inset-0 bg-slate-300/80 grid place-content-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <img src="images/aliva-logo.png" alt=""
+                                    class="w-[100%] max-w-[200px] h-full object-cover">
+                            </div>
+                        </figure>
+                        <h3 class="text-2xl font-bold mb-1">Aliva</h3>
+                        <p>Aliva equipment is known for superior quality and functionality of its
+                            machines. Aside the rotor
+                            machines for the construction industry, Aliva is one of the leading
+                            producers of equipment for the
+                            refractory-, steel industry and special equipment for TBM's.</p>
+                        <a href="https://www2.normet.com/aliva/" target="_blank"
+                            class="underline mt-2 block break-all">https://www2.normet.com/aliva/</a>
+                    </article>
+                    <!-- Single Card end -->
+                </div>
+            </div>
+        </section>
+
+        <section class="my-14 scroll-m-8" id="about-us">
+            <div class="container">
+                <h2 class="text-4xl mb-8">About us</h2>
+
+                <div class="grid gap-2 max-w-5xl">
+                    <p><strong>“Intertechnics LTD”</strong> operates on the Georgian market since
+                        2005. Our basic profile is the import of
+                        European and American, the highest quality road–construction machines, sale
+                        and any kind of service
+                        related to our products.</p>
+                    <p><strong>“Intertechnics LTD”</strong> is the official dealer of well-known
+                        brands in Georgia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-14 scroll-m-8" id="contact">
+            <div class="container">
+                <h2 class="text-4xl mb-8">Get in Touch</h2>
+
+                <ul class="grid gap-3">
+                    <li class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 stroke-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                        Petre Iberi str 6, Tbilisi, Georgia
+                    </li>
+                    <li class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 stroke-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                        Service Center: Didi Digomi, Andronikashvili str 28, Tbilisi, Georgia
+                    </li>
+                    <li class="flex flex-col sm:flex-row gap-2">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6 stroke-slate-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            Paata Moseshvili (Director):
+                        </div>
+                        <a href="tel:+995599502517"
+                            class="underline font-bold text-cyan-700 pl-8 sm:pl-0">599 50
+                            25
+                            17</a>
+                    </li>
+                    <li class="flex flex-col sm:flex-row gap-2">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6 stroke-slate-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            Vakho Khimshiashvili (Sales Manager):
+                        </div>
+                        <a href="tel:+995597787815"
+                            class="underline font-bold text-cyan-700 pl-8 sm:pl-0">597 78
+                            78
+                            15</a>
+                    </li>
+                    <li class="flex flex-col sm:flex-row gap-2">
+                        <div class="flex gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6 stroke-slate-500">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            Petre Odzelashvili (Spare Parts Shop):
+                        </div>
+                        <a href="tel:+995599209249"
+                            class="underline font-bold text-cyan-700 pl-8 sm:pl-0">599 20
+                            92
+                            49</a>
+                    </li>
+                    <li class="flex gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6 stroke-slate-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        <a href="mailto:intertechnicsltd@gmail.com"
+                            class="underline font-bold text-cyan-700">intertechnicsltd@gmail.com</a>
+                    </li>
+                </ul>
+
+                <div class="mt-6">
+                    <div id="map" class="h-[380px]"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-yellow-300 py-3">
+        <div class="text-center">
+            &copy; 2005 &ndash; <span id="current-year"></span> &mdash;
+            Intertechnics LTD
+        </div>
+    </footer>
+</body>
+
+</html>
